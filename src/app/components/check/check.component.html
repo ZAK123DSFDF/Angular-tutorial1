@@ -1,0 +1,12 @@
+<p>check works!</p>
+<div>
+  <ng-content select="header"></ng-content>
+  <h1>this is the middle element</h1>
+  <ng-content select="footer"></ng-content>
+</div>
+<div>{{ check.check() }}</div>
+<button (click)="check.increment()">incrementCheck</button>
+<h1 appCheck="#8A716A">this is directive</h1>
+@if (fetch1()) { @for (item of fetch1(); track $index) {
+<p>{{ item.title }}</p>
+} }
